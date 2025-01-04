@@ -8,6 +8,7 @@ namespace Module_13._6._2
     {
         static void Main(string[] args)
         {
+            //Для корректного чтения файла в строку в свойствах файла в Visual Studio должно быть указано "Копировать в выходной каталог" -> "Всегда копировать".
             string text = File.ReadAllText("input2.txt");
             
             var noPunctuationText = new string(text.Where(c => !char.IsPunctuation(c)).ToArray());
